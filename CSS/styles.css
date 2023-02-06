@@ -796,7 +796,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 12px;
 line-height: 1.3;
-color: #000;
+color: #2E2F42;
 outline: transparent;
 transition: border-color var(--transition);
 }
@@ -853,6 +853,7 @@ outline: transparent;
 padding: 8px 16px;
 resize: none;
 transition: border-color var(--transition);
+color: #2E2F42;
 }
 
 .modal-comment:focus{
@@ -865,26 +866,33 @@ transition: border-color var(--transition);
 
 /* !!!!!!!!CHECK-BOX!!!!!!! */
 
+.check-text{
+    width: 100%;
+    display: flex;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+}
 
-
-.check-text ::before {
-    content: '';
+.modal-check-icon{
     width: 16px;
     height: 16px;
-    border: 1.25px solid #2E2F42;
-    cursor: pointer;
+    border: 1px solid #2E2F42;
     border-radius: 2px;
-    margin-left: 8px;
-    display: block;
+    margin-right: 8px;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.modal-check:checked + .check-text::before{
-    background-color: #31D0AA;
+.modal-check:checked + .modal-check-icon{
+    background-color: #4D5AE5;
+    fill: #FFFFFF;
     border: none;
-    background-image: url(../images/modalcheck.svg);
-    background-position: center;
 }
+
 
 
 
