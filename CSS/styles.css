@@ -737,9 +737,7 @@ border-radius: 4px;
 transition: transform var(--transition);
 }
 
-.is-hidden .modal-form {
-transform: translate(-50%, -50%) scale(0.8);
-}
+
 
 /* !!!!!!!!!!MODAL BUTTON CLOSE!!!!!!! */
 .modal-button{
@@ -896,6 +894,10 @@ color: #2E2F42;
     background-color: #4D5AE5;
     fill: #FFFFFF;
     border: none;
+}
+
+.privacy-link{
+    color: #4D5AE5;
 }
 
 /* !!!!!!!!!!MODAL BUTTON!!!!!!! */
