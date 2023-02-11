@@ -556,14 +556,6 @@ display: flex;
 align-items: baseline;
 }
 
-.futer-main-content{
-    margin-right: 120px;
-}
-
-.futer-social{
-    margin-right: 80px;
-}
-
 .logo-futer {
 font-family: 'Raleway';
 font-weight: 800;
@@ -573,6 +565,10 @@ align-items: center;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #F4F4FD;
+}
+
+.futer-main-content{
+    margin-right: 120px;
 }
 
 .futer-content{
@@ -587,21 +583,14 @@ width: 264px;
 margin-top: 16px;
 }
 
+.futer-social{
+    margin-right: 80px;
+}
+
 .social-links{
 display: flex;
 gap: 16px;
-
 }
-
-.footer-social-media-link{
-display: flex;
-justify-content: center;
-align-items: center;
-
-height: 40px;
-border-radius: 50%;
-background-color: rgba(255, 255, 255, 0.1);
-} 
 
 .footer-header{
 font-size: 16px;
@@ -640,19 +629,36 @@ display: flex;
 justify-content: center;
 }
 
+
+.footer-subscribe-header{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.futer-form {
+    display: flex;
+    align-items: center;
+}
 .futer-input{
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.04em;
 color: #8E8F99;
 min-width: 264px;
+height: 40px;
 padding-top: 8px;
 padding-right: 16px;
 padding-bottom: 8px;
 padding-left: 16px;
+margin-right: 24px;
 border: 1px solid rgba(255, 255, 255, 0.3);
 border-radius: 4px;
 background-color: transparent;
+transition: border-color var(--transition);
 }
 
 .footer-input::placeholder {
@@ -660,10 +666,6 @@ background-color: transparent;
     line-height: 2;
     letter-spacing: 0.04em;
     color: rgba(255, 255, 255, 0.6);
-}
-.futer-form{
-    display: flex;
-    align-items: center;
 }
 
 .futer-button {
@@ -674,7 +676,7 @@ background-color: transparent;
     border-color: transparent;
     border-radius: 4px;
     padding: 8px 24px;
-    min-width: 165px;
+    width: 165px;
 
     color: #FFFFFF;
     font-weight: 500;
@@ -742,8 +744,8 @@ transform: translate(-50%, -50%) scale(0.8);
 /* !!!!!!!!!!MODAL BUTTON CLOSE!!!!!!! */
 .modal-button{
 position: absolute;
-top: 10px;
-right: 10px;;
+top: 24px;
+right: 24px;;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -775,6 +777,7 @@ background: #404BBF;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
     color:#2E2F42;
     text-align: center;
     margin-bottom: 14px;
@@ -873,6 +876,7 @@ color: #2E2F42;
     line-height: 1.33;
     letter-spacing: 0.04em;
     color: #8E8F99;
+    margin-bottom: 24px;
 }
 
 .modal-check-icon{
@@ -881,27 +885,25 @@ color: #2E2F42;
     border: 1px solid #2E2F42;
     border-radius: 2px;
     margin-right: 8px;
-
+    fill: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color var(--transition);
 }
 
-.modal-check:checked + .modal-check-icon{
+.modal-check:checked + .check-text span{
     background-color: #4D5AE5;
     fill: #FFFFFF;
     border: none;
 }
 
-
-
-
 /* !!!!!!!!!!MODAL BUTTON!!!!!!! */
-.modal-button-send{
+.modal-button-send {
     padding: 16px 32px;
     margin: 0 auto;
     width: 169px;
-    
+
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -922,7 +924,7 @@ color: #2E2F42;
 }
 
 .modal-button-send:hover,
-.modal-button-send:focus{
+.modal-button-send:focus {
     background-color: #404BBF;
 }
 
